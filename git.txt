@@ -1,0 +1,61 @@
+ssh-keygen -t rsa -b 4096 -C "316853809@qq.com"
+
+
+
+SHA256:5kZI0cmTDHIwpeUJVI/meNt7/5Q5wLuGhYRhUtN2fLA
+
+
+git config --global user.name SZCGPipeline
+git config --global user.email 316853809@qq.com
+git config --global push.default matching
+git config --global core.quotepath false
+git config --global core.editor "vim"
+
+
+
+git remote add origin git@github.com:SZCGPipeline/https://github.com/SZCGPipeline/CG.git
+git clone username@host:/path/to/repository
+git clone https://github.com/SZCGPipeline/CG.git
+git remote add origin https://github.com/SZCGPipeline/CG.git
+
+登陆密码填key:
+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
+
+
+git init.
+
+
+日常操作：
+git add .
+git commit -m ""
+git push -u origin 
+
+
+
+
+ 五、git常用命令汇总
+
+克隆代码：git clone 远程仓库的url
+配置邮箱：git config --global user.email
+配置用户名：git config --global user.name
+从远程仓库下拉代码到本地：git pull
+放弃本地代码的修改：git checkout -- <file>
+将本地代码添加到缓冲区：git add * .
+移除add到缓冲区的文件：git reset HEAD <file>
+将本地代码提交到本地仓库：git commit -m"日志文字"
+将本地仓库同步到远程仓库：git push origin master
+查看日志：git log
+查看某个文件的提交日志：git log 文件名
+查看某个用户的提交日志：git log --author=“author”
+查看某条提交日志相信信息：git show 版本号
+查看git全部命令：git --help
+查看git某个命令的使用：git help 命令名
+ 六、远程仓库中文件夹的删除
+
+ 打开git bash
+
+敲入$ git rm -r --cached 文件夹名称
+
+敲入$ git commit -m 'delete 文件夹名称 dir'
+
+ 敲入$ git push  origin master重新提交
